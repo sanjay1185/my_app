@@ -1,5 +1,5 @@
 
-<%= link_to "Upload New Image", new_user_image_path(@user.id)  %>
+<%= link_to "Upload New", new_user_image_path(@user.id)  %>
 
 <%for image in @user.images%>
 <img src="<%= url_for(:action => 'show', :id => image.id) %>"/>
